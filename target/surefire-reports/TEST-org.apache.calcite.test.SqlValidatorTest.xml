@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.test.SqlValidatorTest" time="5.829" tests="266" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testStringLiteral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testValuesTypeMismatchFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testElement" classname="org.apache.calcite.test.SqlValidatorTest" time="0.024"/>
+  <testcase name="testAggregateFilterContainsAggregate" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testNotIllegalTypeFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testNaturalJoinIncompatibleDatatype" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testCountFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testStarIdentifier" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testStreamJoin" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testSchemaTableStar" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testWhereReference" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testSumTooManyArgs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testJoinRowType" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testDateTime" classname="org.apache.calcite.test.SqlValidatorTest" time="0.127"/>
+  <testcase name="testCastBinaryLiteral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testUnquotedBuiltInFunctionNames" classname="org.apache.calcite.test.SqlValidatorTest" time="0.041"/>
+  <testcase name="testMultisetSetOperators" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testExtract" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testTypesLiterals" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testStreamGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testSumInvalidArgs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testNestedFrom" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testOrderGroupDistinct" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testBooleans" classname="org.apache.calcite.test.SqlValidatorTest" time="0.015"/>
+  <testcase name="testJoinUsingInvalidColsFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testWindowPartial" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testOverlay" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testBindBetween" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testJoinOnExistsCorrelated" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testCaseExpression" classname="org.apache.calcite.test.SqlValidatorTest" time="0.012"/>
+  <testcase name="testRow" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testCollectionTableWithCursorParam" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testStringCompare" classname="org.apache.calcite.test.SqlValidatorTest" time="0.092"/>
+  <testcase name="testWindowFunctions2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.126"/>
+  <testcase name="testInvalidGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.039"/>
+  <testcase name="testSchemaTableColumnInGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.025"/>
+  <testcase name="testDummy" classname="org.apache.calcite.test.SqlValidatorTest" time="0"/>
+  <testcase name="testGroup" classname="org.apache.calcite.test.SqlValidatorTest" time="0.03"/>
+  <testcase name="testLarge" classname="org.apache.calcite.test.SqlValidatorTest" time="1.974"/>
+  <testcase name="testOrder" classname="org.apache.calcite.test.SqlValidatorTest" time="0.039"/>
+  <testcase name="testNullCast" classname="org.apache.calcite.test.SqlValidatorTest" time="0.015"/>
+  <testcase name="testWhere" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testBind" classname="org.apache.calcite.test.SqlValidatorTest" time="0.012"/>
+  <testcase name="testNull" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testTrim" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testWith" classname="org.apache.calcite.test.SqlValidatorTest" time="0.027"/>
+  <testcase name="testLexAndQuoting" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testNestedAggOver" classname="org.apache.calcite.test.SqlValidatorTest" time="0.175"/>
+  <testcase name="testFloorCeil" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testWithColumnAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testUpdateBind" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testSubstringFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testInvalidGroupBy2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testInvalidGroupBy3" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testUnionTypeMismatchWithValuesFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testCorrelationJoin" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testIs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.036"/>
+  <testcase name="testOn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCaseInsensitiveInsert" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testCoalesceFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testIntervalTimeUnitEnumeration" classname="org.apache.calcite.test.SqlValidatorTest" time="0"/>
+  <testcase name="testTableExtend" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testNaturalJoinWithUsing" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testExplicitTable" classname="org.apache.calcite.test.SqlValidatorTest" time="0.024"/>
+  <testcase name="testMonotonic" classname="org.apache.calcite.test.SqlValidatorTest" time="0.045"/>
+  <testcase name="testColumnNotFound2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testColumnNotFound3" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testStreamHaving" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testAggregateInGroupByFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testIntervalLiterals" classname="org.apache.calcite.test.SqlValidatorTest" time="0.689"/>
+  <testcase name="testDuplicateColumnAliasIsOK" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testAmbiguousDynamicStar2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testAmbiguousDynamicStar3" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testAmbiguousDynamicStar4" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testNumericOperators" classname="org.apache.calcite.test.SqlValidatorTest" time="0.155"/>
+  <testcase name="testJoinOnIn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testQuotedFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testBetween" classname="org.apache.calcite.test.SqlValidatorTest" time="0.03"/>
+  <testcase name="testSubMultisetOf" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testUnionNameResolution" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testMinusDateOperator" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testColumnNotFound" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testAmbiguousDynamicStar" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCaseInsensitiveTables" classname="org.apache.calcite.test.SqlValidatorTest" time="0.016"/>
+  <testcase name="testWindowClause" classname="org.apache.calcite.test.SqlValidatorTest" time="0.07"/>
+  <testcase name="testInvalidWindowFunctionWithGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testUnionCountMismatcWithValuesFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testStructType" classname="org.apache.calcite.test.SqlValidatorTest" time="0.04"/>
+  <testcase name="testWithOrderInParentheses" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testLateral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testJoinOnScalarCorrelated" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testFieldOrigin" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testWindowFunctionsWithoutOver" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testGroupBySystemFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testAggregateFilter" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testDoubleNoAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testGroupExpressionEquivalence" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testHavingBetween" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testStreamValues" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testLexJava" classname="org.apache.calcite.test.SqlValidatorTest" time="0.011"/>
+  <testcase name="testArithmeticOperatorsFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.012"/>
+  <testcase name="testOrderDistinct" classname="org.apache.calcite.test.SqlValidatorTest" time="0.026"/>
+  <testcase name="testCrossJoinUsingFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testBinaryStringFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testRewriteWithLimitWithoutOrderBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCastToInterval" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testCoalesce" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testJdbcFunctionCall" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testOverInOrderBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testExpandStar" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testMultipleSameAsPass" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCollectionTableWithLateral2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testStringLiteralBroken" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testTimestampAddAndDiff" classname="org.apache.calcite.test.SqlValidatorTest" time="0.048"/>
+  <testcase name="testLikeAndSimilar" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testGroupId" classname="org.apache.calcite.test.SqlValidatorTest" time="0.011"/>
+  <testcase name="testRewriteWithIdentifierExpansion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCharLength" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testInvalidFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testGroupExpressionEquivalenceLiteral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.032"/>
+  <testcase name="testSelectDistinct" classname="org.apache.calcite.test.SqlValidatorTest" time="0.02"/>
+  <testcase name="testCaseInsensitive" classname="org.apache.calcite.test.SqlValidatorTest" time="0.016"/>
+  <testcase name="testOrderGroup" classname="org.apache.calcite.test.SqlValidatorTest" time="0.044"/>
+  <testcase name="testRecordType" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testOrderUnion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testTypeOfAs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="unnestMapMustNameColumnsKeyAndValueWhenNotAliased" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testArithmeticOperators" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testAsColumnList" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testMemberOf" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testWindowClauseWithSubquery" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testMinMaxFunctions" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testCrossJoinOnFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testConcatWithCharset" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testWindowClause2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testTrimFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testJoinUsing" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testCardinality" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testRecordTypeElided" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testStreamUnionAll" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testInsertBind" classname="org.apache.calcite.test.SqlValidatorTest" time="0.022"/>
+  <testcase name="testJoinOnScalarFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testConcatFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testUnnestArrayColumn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testCollectionTableWithLateral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testOrderJoin" classname="org.apache.calcite.test.SqlValidatorTest" time="0.011"/>
+  <testcase name="testWindowNegative" classname="org.apache.calcite.test.SqlValidatorTest" time="0.064"/>
+  <testcase name="testAndOrIllegalTypesFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testJoinUsingIncompatibleDatatype" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testNaturalJoinWithOnFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testScalarsFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCaseExpressionFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testCaseExpressionTypes" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testCoalesceWithRewrite" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testUnnestArray" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testWithOrderAgg" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testNameResolutionInValuesClause" classname="org.apache.calcite.test.SqlValidatorTest" time="0.023"/>
+  <testcase name="testAggregateInOrderByFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testRewriteWithOffsetWithoutOrderBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCaseInsensitiveSubQuery" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testCollect" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testGroupingId" classname="org.apache.calcite.test.SqlValidatorTest" time="0.046"/>
+  <testcase name="testFunctionalDistinct" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testSumTooFewArgs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testOneWinFunc" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCaseInsensitiveTableAliasInGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testBrackets" classname="org.apache.calcite.test.SqlValidatorTest" time="0.022"/>
+  <testcase name="testLastFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testCubeBitSets" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testNaturalCrossJoinFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testIntervalMillisConversion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.024"/>
+  <testcase name="testAmbiguousColumn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.011"/>
+  <testcase name="testJoinOnInCorrelated" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testCollectionTable" classname="org.apache.calcite.test.SqlValidatorTest" time="0.011"/>
+  <testcase name="testLexJavaKeyword" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testEqualNotEqualFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testUnnestWithOrdinality" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testStreamWhere" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testGroupingSets" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testFromReferenceFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testRowtype" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testBinaryString" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testDeleteBind" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testStructuredTypes" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testScalarSubQuery" classname="org.apache.calcite.test.SqlValidatorTest" time="0.006"/>
+  <testcase name="testCountCompositeFunction" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testUnionTypeMismatchFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testNonLocalStar" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testStreamOrderBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.007"/>
+  <testcase name="testInSubquery" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testCaseInsensitiveTableAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testSubstring" classname="org.apache.calcite.test.SqlValidatorTest" time="0.012"/>
+  <testcase name="testCorrelatingVariables" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testJoinUsingThreeWay" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testGroupAgg" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testGrouping" classname="org.apache.calcite.test.SqlValidatorTest" time="0.024"/>
+  <testcase name="testOverlaps" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testConcat" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testJoinOnInCorrelatedFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testFusion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testMultiset" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testHaving" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testRewriteWithColumnReferenceExpansionAndFromAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testInnerJoinWithoutUsingOrOnFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testInList" classname="org.apache.calcite.test.SqlValidatorTest" time="0.024"/>
+  <testcase name="testInsert" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testIsASet" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testGroupExpressionEquivalenceId" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testPosition" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testAggregateInNonGroupBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.016"/>
+  <testcase name="testDateCompare" classname="org.apache.calcite.test.SqlValidatorTest" time="0.05"/>
+  <testcase name="testWithSubquery" classname="org.apache.calcite.test.SqlValidatorTest" time="0.074"/>
+  <testcase name="testRewriteWithoutIdentifierExpansion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testScalars" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testInlineWinDef" classname="org.apache.calcite.test.SqlValidatorTest" time="0.033"/>
+  <testcase name="testUnionCountMismatchFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0"/>
+  <testcase name="testWithOrder" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testSchemaTableColumn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testPartitionByExpr" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testWithUnion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testSelectWithoutFrom" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testGroupByCorrelatedColumn" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testNullIf" classname="org.apache.calcite.test.SqlValidatorTest" time="0.012"/>
+  <testcase name="testOperatorsSortedByPrecedence" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testDynamicStar2" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testStarInFromFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testPrefix" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testDateTimeCast" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testIsFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testRollup" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testIntervalOperators" classname="org.apache.calcite.test.SqlValidatorTest" time="0.047"/>
+  <testcase name="testSample" classname="org.apache.calcite.test.SqlValidatorTest" time="0.017"/>
+  <testcase name="testJoinUsingDupColsFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.019"/>
+  <testcase name="testStandardOperatorNamesAreUpperCase" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testStream" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testCastFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+  <testcase name="testWindowFunctions" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testCubeGrouping" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testSingleNoAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0"/>
+  <testcase name="testRewriteWithColumnReferenceExpansion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testUnnest" classname="org.apache.calcite.test.SqlValidatorTest" time="0.014"/>
+  <testcase name="testDuplicateTableAliasFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.017"/>
+  <testcase name="testJoinSubquery" classname="org.apache.calcite.test.SqlValidatorTest" time="0">
+    <skipped message="bug: should fail if subquery does not have alias"/>
+  </testcase>
+  <testcase name="testTranslate3" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testObscuredAliasFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testRollupBitSets" classname="org.apache.calcite.test.SqlValidatorTest" time="0"/>
+  <testcase name="testPartitionByColumnInJoinAlias" classname="org.apache.calcite.test.SqlValidatorTest" time="0.005"/>
+  <testcase name="testNestedAggFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testUpperLower" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testMultipleDifferentAs" classname="org.apache.calcite.test.SqlValidatorTest" time="0.009"/>
+  <testcase name="testNumbers" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testAggregateFilterNotBoolean" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testStringCompareType" classname="org.apache.calcite.test.SqlValidatorTest" time="0.004"/>
+  <testcase name="testCoalesceWithoutRewrite" classname="org.apache.calcite.test.SqlValidatorTest" time="0.013"/>
+  <testcase name="testCharsetMismatch" classname="org.apache.calcite.test.SqlValidatorTest" time="0.008"/>
+  <testcase name="testOverInPartitionBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testGroupExpressionEquivalenceStringLiteral" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testUnionTypeMismatchWithStarFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testAggregateFilterInHaving" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testRewriteWithUnionFetchWithoutOrderBy" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testIntervalMonthsConversion" classname="org.apache.calcite.test.SqlValidatorTest" time="0.002"/>
+  <testcase name="testStarAliasFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.001"/>
+  <testcase name="testEqualNotEqual" classname="org.apache.calcite.test.SqlValidatorTest" time="0.018"/>
+  <testcase name="testStarDotIdFails" classname="org.apache.calcite.test.SqlValidatorTest" time="0.003"/>
+  <testcase name="testCastTypeToType" classname="org.apache.calcite.test.SqlValidatorTest" time="0.028"/>
+  <testcase name="testIntervalCompare" classname="org.apache.calcite.test.SqlValidatorTest" time="0.01"/>
+</testsuite>

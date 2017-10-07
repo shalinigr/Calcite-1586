@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.test.RelMetadataTest" time="1.06" tests="86" errors="0" skipped="6" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testPercentageOriginalRowsUnionNoFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.059"/>
+  <testcase name="testRowCountMinusOnFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.075"/>
+  <testcase name="testSelectivityJoin" classname="org.apache.calcite.test.RelMetadataTest" time="0.017"/>
+  <testcase name="testSelectivitySort" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testRowCountDept" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testRowCountJoin" classname="org.apache.calcite.test.RelMetadataTest" time="0.014"/>
+  <testcase name="testRowCountSort" classname="org.apache.calcite.test.RelMetadataTest" time="0.004"/>
+  <testcase name="testDistributionHash" classname="org.apache.calcite.test.RelMetadataTest" time="0.009"/>
+  <testcase name="testRowCountLeftJoinEmptyFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testRowCountFilterOnFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.008"/>
+  <testcase name="testCollation" classname="org.apache.calcite.test.RelMetadataTest" time="0.009"/>
+  <testcase name="testColumnOriginsJoinFullOuter" classname="org.apache.calcite.test.RelMetadataTest" time="0.015"/>
+  <testcase name="testRowCountSortLimitOffsetOnFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.012"/>
+  <testcase name="testPercentageOriginalRowsTableOnly" classname="org.apache.calcite.test.RelMetadataTest" time="0.009"/>
+  <testcase name="testRowCountUnionOnFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testSelectivityAndFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.004"/>
+  <testcase name="testRowCountJoinFiniteEmpty" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testRowCountJoinEmptyEmpty" classname="org.apache.calcite.test.RelMetadataTest" time="0.069"/>
+  <testcase name="testSelectivityAgg" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testColumnOriginsTableOnly" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testColumnOriginsAggCountStar" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testSelectivityRedundantFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testDistinctRowCountTable" classname="org.apache.calcite.test.RelMetadataTest" time="0.069"/>
+  <testcase name="testPercentageOriginalRowsAgg" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testUnion" classname="org.apache.calcite.test.RelMetadataTest" time="0.07"/>
+  <testcase name="testColumnOriginsSelfUnion" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testRowCountSortHighOffsetLimit" classname="org.apache.calcite.test.RelMetadataTest" time="0.013"/>
+  <testcase name="testGroupByEmptyUniqueKeys" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testDistributionSimple" classname="org.apache.calcite.test.RelMetadataTest" time="0.015"/>
+  <testcase name="testColumnOriginsJoinLeft" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testDistributionHashEmpty" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testSelectivityIsNotNullFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testCustomProvider" classname="org.apache.calcite.test.RelMetadataTest" time="0.014"/>
+  <testcase name="testRowCountAggregateEmptyKeyOnEmptyTable" classname="org.apache.calcite.test.RelMetadataTest" time="0.012"/>
+  <testcase name="testSelectivityComparisonFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testColumnOriginsAggKey" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testPercentageOriginalRowsUnionLittleFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGroupByEmptyHavingUniqueKeys" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testColumnOriginsFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testPullUpPredicatesOnNullableConstant" classname="org.apache.calcite.test.RelMetadataTest" time="0.034"/>
+  <testcase name="testRowCountEmp" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testRowCountJoinFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.008"/>
+  <testcase name="testColumnOriginsConstant" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testGroupBy" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testSelectivityOrFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testColumnOriginsValues" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testColumnOriginsJoinOuter" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testColumnOriginsJoinRight" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testRowCountFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0.004"/>
+  <testcase name="testPercentageOriginalRowsUnionBigFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPredicates" classname="org.apache.calcite.test.RelMetadataTest" time="0.045"/>
+  <testcase name="testRowCountSortHighLimit" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testPercentageOriginalRowsTwoFilters" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testColumnOriginsUnion" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testRowCountValues" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testRowCountSortLimit" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testRowCountSortLimitOffset" classname="org.apache.calcite.test.RelMetadataTest" time="0.035"/>
+  <testcase name="testPercentageOriginalRowsJoin" classname="org.apache.calcite.test.RelMetadataTest" time="0.032"/>
+  <testcase name="testRowCountAggregate" classname="org.apache.calcite.test.RelMetadataTest" time="0.038"/>
+  <testcase name="testRowCountCartesian" classname="org.apache.calcite.test.RelMetadataTest" time="0.004"/>
+  <testcase name="testSelectivityIsNotNullFilterOnNotNullColumn" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testPercentageOriginalRowsOneFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSelectivityUnion" classname="org.apache.calcite.test.RelMetadataTest" time="0.005"/>
+  <testcase name="testColumnOriginsAggCountNullable" classname="org.apache.calcite.test.RelMetadataTest" time="0.018"/>
+  <testcase name="testRowCountAggregateGroupingSets" classname="org.apache.calcite.test.RelMetadataTest" time="0.021"/>
+  <testcase name="testBrokenCustomProvider" classname="org.apache.calcite.test.RelMetadataTest" time="0.019"/>
+  <testcase name="testPullUpPredicatesFromAggregation" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testRowCountJoinEmptyFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.006"/>
+  <testcase name="testRowCountRightJoinEmptyFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testDistributionSingleton" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testJoinUniqueKeys" classname="org.apache.calcite.test.RelMetadataTest" time="0.073"/>
+  <testcase name="testColumnOriginsExpression" classname="org.apache.calcite.test.RelMetadataTest" time="0.001"/>
+  <testcase name="testPullUpPredicatesOnConstant" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testSelectivityAggCached" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testColumnOriginsDyadicExpression" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testRowCountUnion" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testRowCountAggregateGroupingSetsOneEmpty" classname="org.apache.calcite.test.RelMetadataTest" time="0.005"/>
+  <testcase name="testColumnOriginsAggReduced" classname="org.apache.calcite.test.RelMetadataTest" time="0.006"/>
+  <testcase name="testPercentageOriginalRowsJoinTwoFilters" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRowCountSortLimit0" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testRowCountAggregateEmptyKey" classname="org.apache.calcite.test.RelMetadataTest" time="0.002"/>
+  <testcase name="testAverageRowSize" classname="org.apache.calcite.test.RelMetadataTest" time="0.083"/>
+  <testcase name="testRowCountIntersectOnFinite" classname="org.apache.calcite.test.RelMetadataTest" time="0.007"/>
+  <testcase name="testPercentageOriginalRowsRedundantFilter" classname="org.apache.calcite.test.RelMetadataTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRowCountSortHighOffset" classname="org.apache.calcite.test.RelMetadataTest" time="0.003"/>
+  <testcase name="testDistinctRowCountTableEmptyKey" classname="org.apache.calcite.test.RelMetadataTest" time="0.004"/>
+</testsuite>

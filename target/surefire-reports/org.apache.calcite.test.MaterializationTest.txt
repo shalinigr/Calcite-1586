@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.test.MaterializationTest
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 15, Time elapsed: 5.12 sec - in org.apache.calcite.test.MaterializationTest

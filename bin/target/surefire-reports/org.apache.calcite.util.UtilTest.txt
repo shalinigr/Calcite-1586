@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.util.UtilTest
+-------------------------------------------------------------------------------
+Tests run: 54, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.753 sec - in org.apache.calcite.util.UtilTest

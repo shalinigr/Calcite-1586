@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.tools.PlannerTest" time="9.46" tests="39" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testPlanWithExplicitTraitDefs" classname="org.apache.calcite.tools.PlannerTest" time="0.004"/>
+  <testcase name="testSortPlan" classname="org.apache.calcite.tools.PlannerTest" time="0.004"/>
+  <testcase name="testHeuristicLeftJoin" classname="org.apache.calcite.tools.PlannerTest" time="0.032"/>
+  <testcase name="testParseFails" classname="org.apache.calcite.tools.PlannerTest" time="0.002"/>
+  <testcase name="testMergeProjectForceMode" classname="org.apache.calcite.tools.PlannerTest" time="0.001"/>
+  <testcase name="testHiveDialect" classname="org.apache.calcite.tools.PlannerTest" time="0.001"/>
+  <testcase name="testOrderByNonSelectColumn" classname="org.apache.calcite.tools.PlannerTest" time="0.004"/>
+  <testcase name="testBushy" classname="org.apache.calcite.tools.PlannerTest" time="0.781"/>
+  <testcase name="testPlan" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+  <testcase name="testMetadataUnionPredicates" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+  <testcase name="testBushyCrossJoin2" classname="org.apache.calcite.tools.PlannerTest" time="0.579"/>
+  <testcase name="testParseIdentiferMaxLengthWithDefault" classname="org.apache.calcite.tools.PlannerTest" time="0.001"/>
+  <testcase name="testHeuristicPushInnerJoin" classname="org.apache.calcite.tools.PlannerTest" time="0.01"/>
+  <testcase name="testPlanTransformWithDiffRuleSetAndConvention" classname="org.apache.calcite.tools.PlannerTest" time="0.027"/>
+  <testcase name="testMetadataUnionPredicates2" classname="org.apache.calcite.tools.PlannerTest" time="0.017"/>
+  <testcase name="testMetadataUnionPredicates3" classname="org.apache.calcite.tools.PlannerTest" time="0.01"/>
+  <testcase name="testMetadataUnionPredicates4" classname="org.apache.calcite.tools.PlannerTest" time="0.01"/>
+  <testcase name="testMetadataUnionPredicates5" classname="org.apache.calcite.tools.PlannerTest" time="0.004"/>
+  <testcase name="testPlanTransformWithRuleNameConflicts" classname="org.apache.calcite.tools.PlannerTest" time="0.018"/>
+  <testcase name="testPlanNWayJoin" classname="org.apache.calcite.tools.PlannerTest" time="5.753"/>
+  <testcase name="testValidateUserDefinedAggregate" classname="org.apache.calcite.tools.PlannerTest" time="0.006"/>
+  <testcase name="testParseAndConvertWithOrderByAndOffset" classname="org.apache.calcite.tools.PlannerTest" time="0.002"/>
+  <testcase name="testAlmostBushy" classname="org.apache.calcite.tools.PlannerTest" time="0.873"/>
+  <testcase name="testMetadataAggregatePredicates" classname="org.apache.calcite.tools.PlannerTest" time="0.002"/>
+  <testcase name="testPlanTransformTwice" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+  <testcase name="testConvertWithoutValidateFails" classname="org.apache.calcite.tools.PlannerTest" time="0.001"/>
+  <testcase name="testParseAndConvert" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+  <testcase name="testOldJoinStyleDeCorrelation" classname="org.apache.calcite.tools.PlannerTest" time="0.011"/>
+  <testcase name="testValidateFails" classname="org.apache.calcite.tools.PlannerTest" time="0.002"/>
+  <testcase name="testBushy5" classname="org.apache.calcite.tools.PlannerTest" time="0.729"/>
+  <testcase name="testHeuristicRightJoin" classname="org.apache.calcite.tools.PlannerTest" time="0.058"/>
+  <testcase name="testBushyCrossJoin" classname="org.apache.calcite.tools.PlannerTest" time="0.482"/>
+  <testcase name="testMetadataAggregatePredicates2" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+  <testcase name="testMetadataAggregatePredicates3" classname="org.apache.calcite.tools.PlannerTest" time="0.002"/>
+  <testcase name="testDuplicateSortPlanWithExpr" classname="org.apache.calcite.tools.PlannerTest" time="0.008"/>
+  <testcase name="testDuplicateSortPlanWithOver" classname="org.apache.calcite.tools.PlannerTest" time="0">
+    <skipped message="RelOptPlanner$CannotPlanException: Node [rel#27:Subset#6.ENUMERABLE.[]] could not be implemented; planner state:&#10;&#10;Root: rel#27:Subset#6.ENUMERABLE.[]"/>
+  </testcase>
+  <testcase name="testParseIdentiferMaxLengthWithIncreased" classname="org.apache.calcite.tools.PlannerTest" time="0.001"/>
+  <testcase name="testDuplicateSortPlan" classname="org.apache.calcite.tools.PlannerTest" time="0.007"/>
+  <testcase name="testDuplicateSortPlanWORemoveSortRule" classname="org.apache.calcite.tools.PlannerTest" time="0.003"/>
+</testsuite>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.test.JdbcTest
+-------------------------------------------------------------------------------
+Tests run: 267, Failures: 0, Errors: 0, Skipped: 20, Time elapsed: 44.319 sec - in org.apache.calcite.test.JdbcTest

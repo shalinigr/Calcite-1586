@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.test.RelOptRulesTest
+-------------------------------------------------------------------------------
+Tests run: 199, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 6.947 sec - in org.apache.calcite.test.RelOptRulesTest

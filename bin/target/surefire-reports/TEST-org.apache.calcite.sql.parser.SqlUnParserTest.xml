@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.sql.parser.SqlUnParserTest" time="1.111" tests="255" errors="0" skipped="4" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testUnparseableIntervalQualifiers" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.03"/>
+  <testcase name="testIllegalUnicodeEscape" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.023"/>
+  <testcase name="testStringLiteral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.025"/>
+  <testcase name="testArrayElement" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testValuesExplicitRow" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testUnionOfNonQueryFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testWithNestedFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testTabStop" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExplicitTableOrdered" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.016"/>
+  <testcase name="testIsDistinctFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testDerivedColumnListInJoin" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testBooleanPrecedenceAndAssociativity" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testSchemaTableStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testDescribeTable" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.01"/>
+  <testcase name="testJoinOnParenthesesPlus" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testDeleteWhere" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExplain" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExtract" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testMergeTableRefSource" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testFunctionDefaultArgument" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testTimestampAdd" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLimitWithoutOrder" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testNewSpecification" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testEmbeddedCall" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testEmbeddedDate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testEmbeddedTime" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testCompoundStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExistsInWhere" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFunctionInFunction" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testOverlay" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testParseNumber" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.008"/>
+  <testcase name="testIsBooleanPrecedenceAndAssociativity" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.008"/>
+  <testcase name="testSubMultisetrOf" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSqlInlineComment" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testFoo" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testNot" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testRow" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.005"/>
+  <testcase name="testEmbeddedTimestamp" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testCaseExpression" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.008"/>
+  <testcase name="testCollectionTableWithCursorParam" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testTimeDate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.02"/>
+  <testcase name="testMultilineComment" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.013"/>
+  <testcase name="testDerivedColumnListNoAs" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPrecedenceSetOps" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testCatalogSchemaTableStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectStream" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFloor" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.015"/>
+  <testcase name="testGroup" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLimit" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testOrder" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testWhere" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testWith2" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.085"/>
+  <testcase name="testCast" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.087"/>
+  <testcase name="testCeil" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.015"/>
+  <testcase name="testOver" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.067"/>
+  <testcase name="testStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testTrim" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testWith" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testDerivedColumnList" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectAll" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFullOuterJoin" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.009"/>
+  <testcase name="testSubqueryInJoin" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testFunctionWithDistinct" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testNaturalCrossJoin" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testBitStringNotImplemented" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testNoUnintendedNewReservedKeywords" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testSelectFromBareExplicitTableFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectStreamDistinct" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testBackTickQuery" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testAs" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testParseNumberFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testColumnAliasWithoutAs" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testTableExtend" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.007"/>
+  <testcase name="testInsertUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.006"/>
+  <testcase name="testExplicitTable" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testCollectionTableWithColumnListParam" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testIntervalLiterals" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.152"/>
+  <testcase name="testInQueryWithComma" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMultisetExcept" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testSelectIsNotDdl" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.005"/>
+  <testcase name="testQuotedFunction" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testBetween" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.018"/>
+  <testcase name="testExceptionCleanup" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testColumnAliasWithAs" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testMultisetCast" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSelectWithoutFromWhereFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testScalarQueryInSelect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testDescribeSchema" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLimitOffsetWithoutOrder" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectList3" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSelectList4" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testLateral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.006"/>
+  <testcase name="testIllegalCursors" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testInListEmptyFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testTableSample" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testSelectFromExplicitTable" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testGroupByCube" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testAggregateFilter" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testTimestampDiff" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFullInnerJoinFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testUpsertSelect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSqlOptions" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testCastToInterval" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.014"/>
+  <testcase name="testCoalesce" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testJdbcFunctionCall" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testLiteral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.008"/>
+  <testcase name="testAliasedStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testUpsertValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testOuterJoinNoiseWord" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testCollectionTableWithLateral2" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testCollectionTableWithLateral3" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testReverseSolidus" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testTimestampAddAndDiff" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.016"/>
+  <testcase name="testLikeAndSimilar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.018"/>
+  <testcase name="testMiscIntervalQualifier" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testPrecedence2b" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testCharLength" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSelectDistinct" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExplainWithImpl" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testExplainWithType" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testOrderInternal" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.012"/>
+  <testcase name="testPrecedence0" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testPrecedence1" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testPrecedence2" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testPrecedence3" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testPrecedence4" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testPrecedence5" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testElementFunc" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testOrderUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testOrderOffsetFetch" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.006"/>
+  <testcase name="testMapItemPrecedence" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testArithmeticOperators" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.01"/>
+  <testcase name="testMemberOf" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testUnicodeEscapedLiteral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testJoinCross" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testJoinQuery" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testJoinUsing" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testAddCarets" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectWithoutFromHavingFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testCardinalityFunc" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSelectWithoutFromGroupByFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testSelectDistinctWithoutFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMetadata" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testCollectionTableWithLateral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLongIdentifiers" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testHexAndBinaryString" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testScalarQueryInWhere" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.007"/>
+  <testcase name="testCaseExpressionFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testMapItem" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testOrderIllegalInExpression" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testQueryInIllegalContext" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testDateMinusDate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testMapValueConstructor" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testIsBooleans" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.01"/>
+  <testcase name="testJoinOnParentheses" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testGroupEmpty" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.007"/>
+  <testcase name="testOperateOnColumn" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testOrderNullsFirst" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testQuotesInString" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testEmptyValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testWindowInSubquery" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testInnerOuterJoinFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testMultisetMixed" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMultisetUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testAsAliases" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testConvertAndTranslate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testJoinAssociativity" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testExplainWithoutImpl" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testCollectionTable" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testParensInFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testGroupingSets" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testUnnestWithOrdinality" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.005"/>
+  <testcase name="testWindowReference" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testGroupByCube2" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExplicitTableInJoin" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMinusPrefixInExpression" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLessThanAssociativity" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.019"/>
+  <testcase name="testGroupByRollup" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testWindowSpec" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.009"/>
+  <testcase name="testIntersect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testTableStarColumnFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testIsNotDistinct" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testGenerateKeyWords" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.015"/>
+  <testcase name="testSubstring" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testProcedureCall" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testGrouping" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testOverlaps" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testConcat" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testDelete" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testBangEqualIsBad" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testExcept" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testExists" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFunctionNamedArgument" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMergeSelectSource" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.009"/>
+  <testcase name="testInsertColumnList" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMultiset" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.007"/>
+  <testcase name="testArrayValueConstructor" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testWithNestedInSubquery" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testInList" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testIsASet" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testWindowSpecPartial" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.004"/>
+  <testcase name="testPosition" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testJoinOn" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFromValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testStringLiteralChain" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testStringLiteralFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testInQuery" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testInSetop" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testWithValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testInvalidToken" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testFromWithAs" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testContinuedLiteral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testNotExists" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.003"/>
+  <testcase name="testWithFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testWithUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testSelectWithoutFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testNullIf" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testFromValuesWithoutParens" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testEmbeddedFunction" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testExplainInsert" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSelectWithoutFrom2" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testDateTimeCast" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testMixedFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMixedStar" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testIntervalOperators" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testCastFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testHavingBeforeGroupFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testUnicodeLiteral" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testHavingAfterGroup" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testInsertSelect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testDescribeStatement" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.005"/>
+  <testcase name="testUnnest" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testUpdate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testIntervalArithmetics" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.019"/>
+  <testcase name="testLimitUnion" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testInsertValues" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testTranslate3" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testNestedSelect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testBackTickIdentifier" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.013"/>
+  <testcase name="testSelectList" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testLiteralCollate" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0"/>
+  <testcase name="testExplainUpsert" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testHavingNoGroup" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testIdentifier" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testMultisetIntersect" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testBracketIdentifier" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testHexAndBinaryStringFails" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testEqualNotEqual" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testSequence" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.015"/>
+  <testcase name="testUnionOrder" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.001"/>
+  <testcase name="testQueryInFrom" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+  <testcase name="testFunction" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.011"/>
+  <testcase name="testIntervalCompare" classname="org.apache.calcite.sql.parser.SqlUnParserTest" time="0.002"/>
+</testsuite>

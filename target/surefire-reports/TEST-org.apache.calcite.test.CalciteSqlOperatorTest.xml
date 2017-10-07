@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.test.CalciteSqlOperatorTest" time="42.66" tests="175" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testIsNotDistinctFromOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.383"/>
+  <testcase name="testCastToExactNumeric" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.593"/>
+  <testcase name="testGreaterThanOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.351"/>
+  <testcase name="testTrimFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.21"/>
+  <testcase name="testLeastFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.158"/>
+  <testcase name="testRtrimFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.075"/>
+  <testcase name="testVarSampFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.003"/>
+  <testcase name="testPercentRankFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCharacterLengthFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.081"/>
+  <testcase name="testDecodeFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.307"/>
+  <testcase name="testPrefixPlusOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.119"/>
+  <testcase name="testMultiplyOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.405"/>
+  <testcase name="testPrefixMinusOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.141"/>
+  <testcase name="testPlusOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.373"/>
+  <testcase name="testRowNumberFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testIsNotFalseOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.089"/>
+  <testcase name="testCeilFuncDateTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.367"/>
+  <testcase name="testConvertFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testEqualsOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="2.592"/>
+  <testcase name="testTranslateFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testExpFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.117"/>
+  <testcase name="testExtractFuncFromDateTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.287"/>
+  <testcase name="testStddevSampFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.085"/>
+  <testcase name="testTimestampAdd" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="2.313"/>
+  <testcase name="testCastStringToDecimal" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testLocalTimeFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.134"/>
+  <testcase name="testEscapeOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testGreaterThanOrEqualOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="2.392"/>
+  <testcase name="testAbsFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.371"/>
+  <testcase name="testExplicitTableOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testInOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.193"/>
+  <testcase name="testCastApproxNumericLimits" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testGreaterThanOrEqualOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.307"/>
+  <testcase name="testRow" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testOrOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.12"/>
+  <testcase name="testSessionUserFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.025"/>
+  <testcase name="testCovarSampFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.004"/>
+  <testcase name="testDummy" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testIsNotUnknownOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.109"/>
+  <testcase name="testCastIntervalToNumeric" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.171"/>
+  <testcase name="testLocalTimestampFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.126"/>
+  <testcase name="testCase" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.636"/>
+  <testcase name="testOverlayFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.259"/>
+  <testcase name="testFloorFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.22"/>
+  <testcase name="testNullIfOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.107"/>
+  <testcase name="testAvgFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.01"/>
+  <testcase name="testLessThanOrEqualOperatorInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.303"/>
+  <testcase name="testFloorFuncDateTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.23"/>
+  <testcase name="testCurrentPathFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.03"/>
+  <testcase name="testLiteralBeyondLimit" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.011"/>
+  <testcase name="testLiteralChain" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.188"/>
+  <testcase name="testCastWithRoundingToScalar" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.051"/>
+  <testcase name="testFirstValueFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testNotOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.138"/>
+  <testcase name="testExtractIntervalDayTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.135"/>
+  <testcase name="testLastValueFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testAbsFuncIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.11"/>
+  <testcase name="testCumeDistFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testLikeEscape2" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0">
+    <skipped message="[CALCITE-525] Exception-handling in built-in functions"/>
+  </testcase>
+  <testcase name="testBetween" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.779"/>
+  <testcase name="testExistsOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testMinusDateOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.345"/>
+  <testcase name="testOrOperatorLazy" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.083"/>
+  <testcase name="testInitcapFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.16"/>
+  <testcase name="testCurrentDateFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.206"/>
+  <testcase name="testCharLengthFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.063"/>
+  <testcase name="testTimestampDiff" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.538"/>
+  <testcase name="testGreatestFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.138"/>
+  <testcase name="testCeilFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.195"/>
+  <testcase name="testDenseRankFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCastToInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.295"/>
+  <testcase name="testSqrtFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.102"/>
+  <testcase name="testLessThanOrEqualOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.664"/>
+  <testcase name="testCastExactNumericLimits" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.062"/>
+  <testcase name="testDatePlusInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.069"/>
+  <testcase name="testCastDateTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.433"/>
+  <testcase name="testLogFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.194"/>
+  <testcase name="testNotInOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.055"/>
+  <testcase name="testCurrentTimeFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.124"/>
+  <testcase name="testConcatOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.223"/>
+  <testcase name="testElementFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCastTruncates" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.138"/>
+  <testcase name="testModFuncDivByZero" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.001"/>
+  <testcase name="testLowerFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.157"/>
+  <testcase name="testAndOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.182"/>
+  <testcase name="testCardinalityFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testLikeOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.468"/>
+  <testcase name="testFusionFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testLessThanOperatorInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testLtrimFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.064"/>
+  <testcase name="testQuarter" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.449"/>
+  <testcase name="testLiteralAtLimit" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testSqlOperatorOverloading" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCastDecimalToDoubleToInteger" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.061"/>
+  <testcase name="testExtractTimestamp" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.358"/>
+  <testcase name="testUserFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.038"/>
+  <testcase name="testMaxFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.006"/>
+  <testcase name="testCovarPopFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.003"/>
+  <testcase name="testMapValueConstructor" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.04"/>
+  <testcase name="testPrefixPlusOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.101"/>
+  <testcase name="testIsNotTrueOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.073"/>
+  <testcase name="testPrefixMinusOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.125"/>
+  <testcase name="testCastToString" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="4.247"/>
+  <testcase name="testMinFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.006"/>
+  <testcase name="testLessThanOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.608"/>
+  <testcase name="testVarPopFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.004"/>
+  <testcase name="testCaseNull" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.055"/>
+  <testcase name="testCaseType" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.008"/>
+  <testcase name="testCastNull" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.291"/>
+  <testcase name="testIsNotNullOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.07"/>
+  <testcase name="testNotSimilarToOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.259"/>
+  <testcase name="testIsASetOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testSubstringFunction" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.111"/>
+  <testcase name="testNotEqualsOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.114"/>
+  <testcase name="testModFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.181"/>
+  <testcase name="testDivideOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.248"/>
+  <testcase name="testUpperFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.142"/>
+  <testcase name="testMultiplyIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.126"/>
+  <testcase name="testRankFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testArgumentBounds" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCastToApproxNumeric" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.187"/>
+  <testcase name="testAndOperatorLazy" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.011"/>
+  <testcase name="testPositionFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.21"/>
+  <testcase name="testDivideOperatorIntervals" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.225"/>
+  <testcase name="testCastIntervalToInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.16"/>
+  <testcase name="testCastToBoolean" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.189"/>
+  <testcase name="testExtractDate" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.348"/>
+  <testcase name="testExtractFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.249"/>
+  <testcase name="testPlusIntervalOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.319"/>
+  <testcase name="testCollectFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.057"/>
+  <testcase name="testMinusOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.322"/>
+  <testcase name="testCurrentTimestampFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.108"/>
+  <testcase name="testSystemUserFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.029"/>
+  <testcase name="testMinusIntervalOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.378"/>
+  <testcase name="testNotEqualsOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.17"/>
+  <testcase name="testCeilFuncInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testSimilarToOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="2.491"/>
+  <testcase name="testEqualsOperatorInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.125"/>
+  <testcase name="testCoalesceFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.066"/>
+  <testcase name="testArrayValueConstructor" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.034"/>
+  <testcase name="testStddevPopFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.088"/>
+  <testcase name="testItemOp" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.381"/>
+  <testcase name="testJdbcFn" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.498"/>
+  <testcase name="testOverlapsOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testCastStringToDateTime" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="1.092"/>
+  <testcase name="testPowerFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.108"/>
+  <testcase name="testLnFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.085"/>
+  <testcase name="testIsFalseOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.084"/>
+  <testcase name="testIsTrueOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.09"/>
+  <testcase name="testValuesOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.019"/>
+  <testcase name="testIsNullOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.057"/>
+  <testcase name="testSelect" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.008"/>
+  <testcase name="testGreaterThanOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="1.454"/>
+  <testcase name="testAndOperator2" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.102"/>
+  <testcase name="testModFuncNull" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.059"/>
+  <testcase name="testRegrSxxFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.005"/>
+  <testcase name="testCurrentRoleFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.041"/>
+  <testcase name="testCurrentUserFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.037"/>
+  <testcase name="testMemberOfOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testWindow" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testRegrSyyFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.005"/>
+  <testcase name="testNullifFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="1.213"/>
+  <testcase name="testNotLikeOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.826"/>
+  <testcase name="testExtractIntervalYearMonth" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.15"/>
+  <testcase name="testPlusOperatorAny" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.025"/>
+  <testcase name="testNvlFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.222"/>
+  <testcase name="testTranslate3Func" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.216"/>
+  <testcase name="testCountFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.287"/>
+  <testcase name="testSumFunc" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.047"/>
+  <testcase name="testIsDistinctFromOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.294"/>
+  <testcase name="testLikeEscape" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.247"/>
+  <testcase name="testDescendingOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testFloorFuncInterval" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0"/>
+  <testcase name="testIsUnknownOperator" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.093"/>
+  <testcase name="testNotBetween" classname="org.apache.calcite.test.CalciteSqlOperatorTest" time="0.258"/>
+</testsuite>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.test.JdbcTest" time="44.319" tests="267" errors="0" skipped="20" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testSumOverUnboundedPreceding" classname="org.apache.calcite.test.JdbcTest" time="0.138"/>
+  <testcase name="testWinAggFirstValue" classname="org.apache.calcite.test.JdbcTest" time="0.065"/>
+  <testcase name="testUnquotedCaseSensitiveSubQuerySqlServer" classname="org.apache.calcite.test.JdbcTest" time="0.012"/>
+  <testcase name="testLexOracleAsJava" classname="org.apache.calcite.test.JdbcTest" time="0.002"/>
+  <testcase name="testReuseExpressionWhenNullChecking" classname="org.apache.calcite.test.JdbcTest" time="0.027"/>
+  <testcase name="testJdbcDate" classname="org.apache.calcite.test.JdbcTest" time="0.043"/>
+  <testcase name="testOrderByOnSortedTable2" classname="org.apache.calcite.test.JdbcTest" time="0.074"/>
+  <testcase name="testOrderByFetch" classname="org.apache.calcite.test.JdbcTest" time="0.091"/>
+  <testcase name="testModelWithModifiableView" classname="org.apache.calcite.test.JdbcTest" time="0.062"/>
+  <testcase name="testOrderUnionStarByExpr" classname="org.apache.calcite.test.JdbcTest" time="0.032"/>
+  <testcase name="testWinRowNumber" classname="org.apache.calcite.test.JdbcTest" time="0.078"/>
+  <testcase name="testArrayElement" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testInnerJoinValues" classname="org.apache.calcite.test.JdbcTest" time="0.148"/>
+  <testcase name="testSelfJoinDifferentColumns" classname="org.apache.calcite.test.JdbcTest" time="0.09"/>
+  <testcase name="testWinAggScalarNonNullPhysType" classname="org.apache.calcite.test.JdbcTest" time="0.078"/>
+  <testcase name="testPrimitiveColumnsWithNullValues" classname="org.apache.calcite.test.JdbcTest" time="0.057"/>
+  <testcase name="testMergeJoin" classname="org.apache.calcite.test.JdbcTest" time="0.048"/>
+  <testcase name="testNotExistsCorrelated2" classname="org.apache.calcite.test.JdbcTest" time="0.073"/>
+  <testcase name="testLimitOnQueryableTable" classname="org.apache.calcite.test.JdbcTest" time="0.047"/>
+  <testcase name="testFoodmartLattice" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMultipleScannableTableFunctionWithNamedParameters" classname="org.apache.calcite.test.JdbcTest" time="0.075"/>
+  <testcase name="testLexSqlServer" classname="org.apache.calcite.test.JdbcTest" time="0.002"/>
+  <testcase name="testExplainJoin" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUnnestMultiset" classname="org.apache.calcite.test.JdbcTest" time="0.092"/>
+  <testcase name="testLimitStar" classname="org.apache.calcite.test.JdbcTest" time="0.009"/>
+  <testcase name="testLimitZero" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testNotExistsCorrelated" classname="org.apache.calcite.test.JdbcTest" time="0.054"/>
+  <testcase name="testLeftJoin" classname="org.apache.calcite.test.JdbcTest" time="0.023"/>
+  <testcase name="testQuotedCaseSensitiveSubQuerySqlServer" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testModelCustomSchema" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testMetaDataColumns" classname="org.apache.calcite.test.JdbcTest" time="0.008"/>
+  <testcase name="testModelCustomTable2" classname="org.apache.calcite.test.JdbcTest" time="0.014"/>
+  <testcase name="testHavingNot2" classname="org.apache.calcite.test.JdbcTest" time="0.083"/>
+  <testcase name="testNoCalcBetweenJoins" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testNtileConstantArgs" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="Have no idea how to validate that expression is constant"/>
+  </testcase>
+  <testcase name="testExplain" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testExtract" classname="org.apache.calcite.test.JdbcTest" time="0.015"/>
+  <testcase name="testIntersectMismatchedVarchar" classname="org.apache.calcite.test.JdbcTest" time="0.239"/>
+  <testcase name="testSimpleCalciteSchema" classname="org.apache.calcite.test.JdbcTest" time="0.006"/>
+  <testcase name="testScalarSubQueryInCase2" classname="org.apache.calcite.test.JdbcTest" time="0.044"/>
+  <testcase name="testOrderBy" classname="org.apache.calcite.test.JdbcTest" time="0.058"/>
+  <testcase name="testOverNoOrder" classname="org.apache.calcite.test.JdbcTest" time="0.053"/>
+  <testcase name="testWhereNot" classname="org.apache.calcite.test.JdbcTest" time="0.113"/>
+  <testcase name="testOrderOnSortedTable" classname="org.apache.calcite.test.JdbcTest" time="0.041"/>
+  <testcase name="testGetDateAsString" classname="org.apache.calcite.test.JdbcTest" time="0.025"/>
+  <testcase name="testUnnestItemsInMap" classname="org.apache.calcite.test.JdbcTest" time="0.02"/>
+  <testcase name="testUnnestArrayWithOrdinality" classname="org.apache.calcite.test.JdbcTest" time="0.017"/>
+  <testcase name="testLexMySQL" classname="org.apache.calcite.test.JdbcTest" time="0.001"/>
+  <testcase name="testModelView" classname="org.apache.calcite.test.JdbcTest" time="0.037"/>
+  <testcase name="testEquiThetaJoin" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testOrderByOffsetFetch" classname="org.apache.calcite.test.JdbcTest" time="0.055"/>
+  <testcase name="testCaseSensitiveSubQueryOracle" classname="org.apache.calcite.test.JdbcTest" time="0.018"/>
+  <testcase name="testAggregateEmpty" classname="org.apache.calcite.test.JdbcTest" time="0.047"/>
+  <testcase name="testVarcharEquals" classname="org.apache.calcite.test.JdbcTest" time="0.113"/>
+  <testcase name="testCustomSchemaInFileInPwd" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testValuesAlias" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testArray" classname="org.apache.calcite.test.JdbcTest" time="0.115"/>
+  <testcase name="testBushy" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="extremely slow - a bit better if you disable ProjectMergeRule"/>
+  </testcase>
+  <testcase name="testValuesMinus" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testFetch" classname="org.apache.calcite.test.JdbcTest" time="0.014"/>
+  <testcase name="testValuesComposite" classname="org.apache.calcite.test.JdbcTest" time="0.006"/>
+  <testcase name="testModel" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testNotIn" classname="org.apache.calcite.test.JdbcTest" time="0.262"/>
+  <testcase name="testScannableTableFunctionWithNamedParameters" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testSetMaxRows" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testWinAggDenseRankValuesDesc" classname="org.apache.calcite.test.JdbcTest" time="0.043"/>
+  <testcase name="testWinAggRankValuesDesc" classname="org.apache.calcite.test.JdbcTest" time="0.041"/>
+  <testcase name="testAnd3" classname="org.apache.calcite.test.JdbcTest" time="0.018"/>
+  <testcase name="testHook" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testLike" classname="org.apache.calcite.test.JdbcTest" time="0.013"/>
+  <testcase name="testTrim" classname="org.apache.calcite.test.JdbcTest" time="0.073"/>
+  <testcase name="testTrue" classname="org.apache.calcite.test.JdbcTest" time="0.038"/>
+  <testcase name="testNtileDecimalArg" classname="org.apache.calcite.test.JdbcTest" time="0.003"/>
+  <testcase name="testNullableTimestamp2" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testWithOrderBy" classname="org.apache.calcite.test.JdbcTest" time="0.017"/>
+  <testcase name="testExistsCorrelated" classname="org.apache.calcite.test.JdbcTest" time="0.092"/>
+  <testcase name="testNullableNumericColumnInCloneSchema" classname="org.apache.calcite.test.JdbcTest" time="0.032"/>
+  <testcase name="testTableFunctionNonNullableMustBeLiterals" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="SQLException does not include message from nested exception"/>
+  </testcase>
+  <testcase name="testOrderStarByExpr" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testRightJoin" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testOrderByNullsFirst" classname="org.apache.calcite.test.JdbcTest" time="0.054"/>
+  <testcase name="testIn" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testVariousOuter" classname="org.apache.calcite.test.JdbcTest" time="0.046"/>
+  <testcase name="testUnnestItemsInMapWithNoAliasAndAdditionalArgument" classname="org.apache.calcite.test.JdbcTest" time="0.015"/>
+  <testcase name="testModelCustomTableIntegerRowSingleColumn" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testWinAggDenseRankValues" classname="org.apache.calcite.test.JdbcTest" time="0.042"/>
+  <testcase name="testSelectDistinctStar" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testExplicitImplicitSchemaSameName" classname="org.apache.calcite.test.JdbcTest" time="0.001"/>
+  <testcase name="testQuotedCaseSensitiveSubQueryMySql" classname="org.apache.calcite.test.JdbcTest" time="0.039"/>
+  <testcase name="testResultSetMetaData" classname="org.apache.calcite.test.JdbcTest" time="0.034"/>
+  <testcase name="testJoinJoin" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUnicode" classname="org.apache.calcite.test.JdbcTest" time="0.176"/>
+  <testcase name="testWinAggRankValues" classname="org.apache.calcite.test.JdbcTest" time="0.044"/>
+  <testcase name="testArrayConstructor" classname="org.apache.calcite.test.JdbcTest" time="0.012"/>
+  <testcase name="testCloneSchema" classname="org.apache.calcite.test.JdbcTest" time="0.046"/>
+  <testcase name="testHavingNot" classname="org.apache.calcite.test.JdbcTest" time="3.349"/>
+  <testcase name="testGroupByNoAggregates" classname="org.apache.calcite.test.JdbcTest" time="0.015"/>
+  <testcase name="testUnnestArrayScalarArray" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testFetchStar" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testTableFunctionCursorsInputs" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="CannotPlanException: Node [rel#24:Subset#6.ENUMERABLE.[]] could not be implemented"/>
+  </testcase>
+  <testcase name="testGetDate" classname="org.apache.calcite.test.JdbcTest" time="0.026"/>
+  <testcase name="testOrderByNullsLast" classname="org.apache.calcite.test.JdbcTest" time="0.066"/>
+  <testcase name="testLateral" classname="org.apache.calcite.test.JdbcTest" time="0.076"/>
+  <testcase name="testLexCaseInsensitive" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testScannableTableFunction" classname="org.apache.calcite.test.JdbcTest" time="0.006"/>
+  <testcase name="testSelectDistinctComposite" classname="org.apache.calcite.test.JdbcTest" time="0.027"/>
+  <testcase name="testGroupByNull" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testAggregateFilter" classname="org.apache.calcite.test.JdbcTest" time="0.092"/>
+  <testcase name="testUnnestItemsInMapWithOrdinality" classname="org.apache.calcite.test.JdbcTest" time="0.018"/>
+  <testcase name="testLexCaseInsensitiveTableAlias" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testStartOfGroupLeadStep1" classname="org.apache.calcite.test.JdbcTest" time="0.042"/>
+  <testcase name="testStartOfGroupLeadStep3" classname="org.apache.calcite.test.JdbcTest" time="0.337"/>
+  <testcase name="testAutomaticTemporaryTable" classname="org.apache.calcite.test.JdbcTest" time="0.023"/>
+  <testcase name="testLexJava" classname="org.apache.calcite.test.JdbcTest" time="0.001"/>
+  <testcase name="testLikeToRegex" classname="org.apache.calcite.test.JdbcTest" time="0"/>
+  <testcase name="testTableFunctionDynamicStructure" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testCustomSchemaDirectConnection" classname="org.apache.calcite.test.JdbcTest" time="0.066"/>
+  <testcase name="testTableMacroMap" classname="org.apache.calcite.test.JdbcTest" time="0.017"/>
+  <testcase name="testSqlAdvisorGetHintsFunction" classname="org.apache.calcite.test.JdbcTest" time="0.027"/>
+  <testcase name="testNotInEmptyQuery" classname="org.apache.calcite.test.JdbcTest" time="0.082"/>
+  <testcase name="testCloneGroupBy2Plan" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="The actual and expected plan differ"/>
+  </testcase>
+  <testcase name="testWinAggRank" classname="org.apache.calcite.test.JdbcTest" time="0.136"/>
+  <testcase name="testAggMultipleMeasures" classname="org.apache.calcite.test.JdbcTest" time="1.008"/>
+  <testcase name="testFunOracle" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testVersion" classname="org.apache.calcite.test.JdbcTest" time="0"/>
+  <testcase name="testNotInQuery" classname="org.apache.calcite.test.JdbcTest" time="0.077"/>
+  <testcase name="testSelectDistinct" classname="org.apache.calcite.test.JdbcTest" time="0.012"/>
+  <testcase name="testConnectionProperties" classname="org.apache.calcite.test.JdbcTest" time="0"/>
+  <testcase name="testLeadDefaultValue" classname="org.apache.calcite.test.JdbcTest" time="0.037"/>
+  <testcase name="testJoinMismatchedVarchar" classname="org.apache.calcite.test.JdbcTest" time="0.089"/>
+  <testcase name="testValuesCompositeRenamed" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testSql92JoinParenthesized" classname="org.apache.calcite.test.JdbcTest" time="0"/>
+  <testcase name="testReuseExpressionWhenNullChecking2" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testReuseExpressionWhenNullChecking3" classname="org.apache.calcite.test.JdbcTest" time="0.085"/>
+  <testcase name="testReuseExpressionWhenNullChecking4" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testReuseExpressionWhenNullChecking5" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testWithInsideWhereExists" classname="org.apache.calcite.test.JdbcTest" time="0.106"/>
+  <testcase name="testWhereNullable" classname="org.apache.calcite.test.JdbcTest" time="0.013"/>
+  <testcase name="testCurrentTimestamp" classname="org.apache.calcite.test.JdbcTest" time="1.052"/>
+  <testcase name="testStartOfGroupLeadValueStep2" classname="org.apache.calcite.test.JdbcTest" time="0.055"/>
+  <testcase name="testLexOracle" classname="org.apache.calcite.test.JdbcTest" time="0.002"/>
+  <testcase name="testMetaTables" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testModelImmutableSchemaCannotContainView" classname="org.apache.calcite.test.JdbcTest" time="0.004"/>
+  <testcase name="testDistinctCount" classname="org.apache.calcite.test.JdbcTest" time="0.621"/>
+  <testcase name="testLagExpressionOffset" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testAlmostBushy" classname="org.apache.calcite.test.JdbcTest" time="0.553"/>
+  <testcase name="testDistinctCountComposite" classname="org.apache.calcite.test.JdbcTest" time="0.483"/>
+  <testcase name="testJoinFiveWay" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUnnestArrayColumn" classname="org.apache.calcite.test.JdbcTest" time="0.025"/>
+  <testcase name="testWinAggPartitionByConstant" classname="org.apache.calcite.test.JdbcTest" time="0.022"/>
+  <testcase name="testLexCaseInsensitiveSubQueryField" classname="org.apache.calcite.test.JdbcTest" time="0.007"/>
+  <testcase name="testModelCustomTableArrayRowSingleColumn" classname="org.apache.calcite.test.JdbcTest" time="0.008"/>
+  <testcase name="testCloneGroupBy2" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="The test returns expected results. Not sure why it is disabled"/>
+  </testcase>
+  <testcase name="testModelWithMaterializedView" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="until JdbcSchema can define materialized views"/>
+  </testcase>
+  <testcase name="testTableMacroWithNamedParameters" classname="org.apache.calcite.test.JdbcTest" time="0.041"/>
+  <testcase name="testCloneGroupBy" classname="org.apache.calcite.test.JdbcTest" time="0.054"/>
+  <testcase name="testUnnestArray" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testOrderByDescNullsLast" classname="org.apache.calcite.test.JdbcTest" time="0.046"/>
+  <testcase name="testModelWithInvalidModifiableView" classname="org.apache.calcite.test.JdbcTest" time="0.102"/>
+  <testcase name="testStatementCloseOnCompletion" classname="org.apache.calcite.test.JdbcTest" time="0.009"/>
+  <testcase name="testOrderByCase" classname="org.apache.calcite.test.JdbcTest" time="0.063"/>
+  <testcase name="testOrderByCast" classname="org.apache.calcite.test.JdbcTest" time="0.178"/>
+  <testcase name="testOrderByDesc" classname="org.apache.calcite.test.JdbcTest" time="0.041"/>
+  <testcase name="testOrderByExpr" classname="org.apache.calcite.test.JdbcTest" time="0.015"/>
+  <testcase name="testOrderByView" classname="org.apache.calcite.test.JdbcTest" time="0.087"/>
+  <testcase name="testSelfJoinCount" classname="org.apache.calcite.test.JdbcTest" time="0.099"/>
+  <testcase name="testGetTimestampObject" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testCartesianJoin" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testModelWithComment" classname="org.apache.calcite.test.JdbcTest" time="0.038"/>
+  <testcase name="testExplainJoinOrderingWithOr" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testLexMySQLANSI" classname="org.apache.calcite.test.JdbcTest" time="0.002"/>
+  <testcase name="testWinAggOrderByConstant" classname="org.apache.calcite.test.JdbcTest" time="0.023"/>
+  <testcase name="testWinAggFirstValueEmptyWindow" classname="org.apache.calcite.test.JdbcTest" time="0.041"/>
+  <testcase name="testNtileNegativeArg" classname="org.apache.calcite.test.JdbcTest" time="0.002"/>
+  <testcase name="testWhereOrAndNullable" classname="org.apache.calcite.test.JdbcTest" time="0.04"/>
+  <testcase name="testJdbcTimestamp" classname="org.apache.calcite.test.JdbcTest" time="0.035"/>
+  <testcase name="testOrderByVarious" classname="org.apache.calcite.test.JdbcTest" time="1.151"/>
+  <testcase name="testStartOfGroupLastValueStep1" classname="org.apache.calcite.test.JdbcTest" time="0.051"/>
+  <testcase name="testStartOfGroupLastValueStep2" classname="org.apache.calcite.test.JdbcTest" time="0.058"/>
+  <testcase name="testStartOfGroupLastValueStep3" classname="org.apache.calcite.test.JdbcTest" time="0.217"/>
+  <testcase name="testMultisetQuery" classname="org.apache.calcite.test.JdbcTest" time="0.019"/>
+  <testcase name="testTrivialSort" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testCountUnionAll" classname="org.apache.calcite.test.JdbcTest" time="0.026"/>
+  <testcase name="testUnquotedCaseSensitiveSubQueryMySql" classname="org.apache.calcite.test.JdbcTest" time="0.037"/>
+  <testcase name="testWinAggScalarNonNullPhysTypePlusOne" classname="org.apache.calcite.test.JdbcTest" time="0.075"/>
+  <testcase name="testTrimFields" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testMultisetConstructor" classname="org.apache.calcite.test.JdbcTest" time="0.016"/>
+  <testcase name="testComparingIntAndString" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="Fails with org.codehaus.commons.compiler.CompileException: Line 16, Column 112: Cannot compare types &quot;int&quot; and &quot;java.lang.String&quot;&#10;"/>
+  </testcase>
+  <testcase name="testCloneQueries" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMapSchemaDirectConnection" classname="org.apache.calcite.test.JdbcTest" time="0.006"/>
+  <testcase name="testMockDdl" classname="org.apache.calcite.test.JdbcTest" time="0.019"/>
+  <testcase name="testThetaJoin" classname="org.apache.calcite.test.JdbcTest" time="0.065"/>
+  <testcase name="testDistinctCount2" classname="org.apache.calcite.test.JdbcTest" time="0.519"/>
+  <testcase name="testStartOfGroupLagValueStep2" classname="org.apache.calcite.test.JdbcTest" time="0.058"/>
+  <testcase name="testStaticTableMacroInModel" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testWinAgg2" classname="org.apache.calcite.test.JdbcTest" time="0.119"/>
+  <testcase name="testGroupingSets" classname="org.apache.calcite.test.JdbcTest" time="0.029"/>
+  <testcase name="testOrderSorted" classname="org.apache.calcite.test.JdbcTest" time="0.063"/>
+  <testcase name="testGroupBy1Max1" classname="org.apache.calcite.test.JdbcTest" time="0.017"/>
+  <testcase name="testArrayIndexing" classname="org.apache.calcite.test.JdbcTest" time="0.013"/>
+  <testcase name="testGetByName" classname="org.apache.calcite.test.JdbcTest" time="0.009"/>
+  <testcase name="testJoinCorrelatedScalarSubquery" classname="org.apache.calcite.test.JdbcTest" time="0.234"/>
+  <testcase name="testGetTimestamp" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testScalarSubQuery" classname="org.apache.calcite.test.JdbcTest" time="0.056"/>
+  <testcase name="testJdbcSchemaDirectConnection" classname="org.apache.calcite.test.JdbcTest" time="0.085"/>
+  <testcase name="testGroupByMax1IsNull" classname="org.apache.calcite.test.JdbcTest" time="0.023"/>
+  <testcase name="testSimpleIn" classname="org.apache.calcite.test.JdbcTest" time="0.093"/>
+  <testcase name="testUnnestArrayScalarArrayWithOrdinal" classname="org.apache.calcite.test.JdbcTest" time="0.036"/>
+  <testcase name="testArray2" classname="org.apache.calcite.test.JdbcTest" time="0.014"/>
+  <testcase name="testStaticTableFunctionInModel" classname="org.apache.calcite.test.JdbcTest" time="0.036"/>
+  <testcase name="testDialect" classname="org.apache.calcite.test.JdbcTest" time="0.045"/>
+  <testcase name="testLagDefaultValue" classname="org.apache.calcite.test.JdbcTest" time="0.066"/>
+  <testcase name="testExplainJoin2" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testExplainJoin3" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testExplainJoin4" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testOnConnectionClose" classname="org.apache.calcite.test.JdbcTest" time="0.007"/>
+  <testcase name="testModelCustomTable" classname="org.apache.calcite.test.JdbcTest" time="0.014"/>
+  <testcase name="testNotInQueryWithNull" classname="org.apache.calcite.test.JdbcTest" time="0.106"/>
+  <testcase name="testJoinInCorrelatedSubquery" classname="org.apache.calcite.test.JdbcTest" time="0.085"/>
+  <testcase name="testTableFunction" classname="org.apache.calcite.test.JdbcTest" time="0.015"/>
+  <testcase name="testReduceCompositeCountNotNullable" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testDifferentTypesSameFields" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testOrderByDescNullsFirst" classname="org.apache.calcite.test.JdbcTest" time="0.044"/>
+  <testcase name="testTableFunctionCursorInputs" classname="org.apache.calcite.test.JdbcTest" time="0">
+    <skipped message="CannotPlanException: Node [rel#18:Subset#4.ENUMERABLE.[]] could not be implemented"/>
+  </testcase>
+  <testcase name="testJanino169" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testUnnestMultiset2" classname="org.apache.calcite.test.JdbcTest" time="0.018"/>
+  <testcase name="testMultisetQueryWithSingleColumn" classname="org.apache.calcite.test.JdbcTest" time="0.045"/>
+  <testcase name="testSelectWithoutFrom" classname="org.apache.calcite.test.JdbcTest" time="0.009"/>
+  <testcase name="testNtile1" classname="org.apache.calcite.test.JdbcTest" time="0.034"/>
+  <testcase name="testNtile2" classname="org.apache.calcite.test.JdbcTest" time="0.032"/>
+  <testcase name="testMetaDataPrimaryKeys" classname="org.apache.calcite.test.JdbcTest" time="0.004"/>
+  <testcase name="testWinIntervalFrame" classname="org.apache.calcite.test.JdbcTest" time="0.062"/>
+  <testcase name="testScalarSubQueryUncorrelated" classname="org.apache.calcite.test.JdbcTest" time="0.028"/>
+  <testcase name="testOverUnboundedPreceding" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testTableMacroInModel" classname="org.apache.calcite.test.JdbcTest" time="0.008"/>
+  <testcase name="testUnionWithSameColumnNames" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testReadme" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testRollup" classname="org.apache.calcite.test.JdbcTest" time="0.02"/>
+  <testcase name="testSimple" classname="org.apache.calcite.test.JdbcTest" time="0"/>
+  <testcase name="testOrderByOnSortedTable" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testSqlAdvisorSchemaNames" classname="org.apache.calcite.test.JdbcTest" time="0.011"/>
+  <testcase name="testWinAggFirstValueDesc" classname="org.apache.calcite.test.JdbcTest" time="0.043"/>
+  <testcase name="testNullableTimestamp" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testValues" classname="org.apache.calcite.test.JdbcTest" time="0.005"/>
+  <testcase name="testTrimFieldsOver" classname="org.apache.calcite.test.JdbcTest" time="0.021"/>
+  <testcase name="testSumOverPossiblyEmptyWindow" classname="org.apache.calcite.test.JdbcTest" time="0.075"/>
+  <testcase name="testWinAgg" classname="org.apache.calcite.test.JdbcTest" time="0.098"/>
+  <testcase name="testPreparedStatement" classname="org.apache.calcite.test.JdbcTest" time="0.036"/>
+  <testcase name="testNestedArray" classname="org.apache.calcite.test.JdbcTest" time="0.012"/>
+  <testcase name="testSchemaCaching" classname="org.apache.calcite.test.JdbcTest" time="0.004"/>
+  <testcase name="testReduceCountNotNullable" classname="org.apache.calcite.test.JdbcTest" time="0.027"/>
+  <testcase name="testScalarSubQueryInCase" classname="org.apache.calcite.test.JdbcTest" time="0.136"/>
+  <testcase name="testSelfJoin" classname="org.apache.calcite.test.JdbcTest" time="0.097"/>
+  <testcase name="testJoinManyWay" classname="org.apache.calcite.test.JdbcTest" time="24.657"/>
+  <testcase name="testWinAggConstant" classname="org.apache.calcite.test.JdbcTest" time="0.024"/>
+  <testcase name="testLagInvalidOffsetArgument" classname="org.apache.calcite.test.JdbcTest" time="0.03"/>
+  <testcase name="testValuesCompositeRenamedSameNames" classname="org.apache.calcite.test.JdbcTest" time="0.01"/>
+  <testcase name="testStartOfGroupLagStep1" classname="org.apache.calcite.test.JdbcTest" time="0.073"/>
+  <testcase name="testStartOfGroupLagStep3" classname="org.apache.calcite.test.JdbcTest" time="0.232"/>
+  <testcase name="testCountStar" classname="org.apache.calcite.test.JdbcTest" time="0.027"/>
+  <testcase name="testGroupByNoAggregatesAllColumns" classname="org.apache.calcite.test.JdbcTest" time="0.052"/>
+  <testcase name="testFullJoin" classname="org.apache.calcite.test.JdbcTest" time="0.029"/>
+  <testcase name="testDistinctCountSimple" classname="org.apache.calcite.test.JdbcTest" time="0.453"/>
+  <testcase name="testTableMacro" classname="org.apache.calcite.test.JdbcTest" time="0.013"/>
+  <testcase name="testTableFunctionInModel" classname="org.apache.calcite.test.JdbcTest" time="0.033"/>
+  <testcase name="testUnnestArrayScalarArrayAliased" classname="org.apache.calcite.test.JdbcTest" time="0.04"/>
+  <testcase name="testWinAggConstantMultipleConstants" classname="org.apache.calcite.test.JdbcTest" time="0.018"/>
+</testsuite>

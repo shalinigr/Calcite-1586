@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.test.ReflectiveSchemaTest
+-------------------------------------------------------------------------------
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 9.205 sec - in org.apache.calcite.test.ReflectiveSchemaTest

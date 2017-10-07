@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="4.236" tests="223" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/shalini/Documents/DRFall2017/calcite/apache-calcite-1.10.0-src"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5g/l2rk_dhd08l5whxnhpf240040000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/shalini/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/shalini/Downloads/apache-maven-3.5.0/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="library.jansi.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/shalini"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="shalini"/>
+    <property name="java.class.path" value="/Users/shalini/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/shalini/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/shalini/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testSampleBernoulliQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.028"/>
+  <testcase name="testWithInsideWhereExistsRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.039"/>
+  <testcase name="testOrderByAlias" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.024"/>
+  <testcase name="testElement" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testAggCaseInSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testAliasList" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testIntegerLiteral" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.023"/>
+  <testcase name="testOrderBySameExpr" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testSampleBernoulli" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testOffset0" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testIsDistinctFrom" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testDuplicateGroupingSets" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testGroupingFunctionWithGroupBy" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testIdenticalExpressionInSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testNotExistsCorrelated" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testReferDynamicStarInSelectOB" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testNestedCorrelations" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testLateralDecorrelateRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testNestedCorrelationsDecorrelated" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.035"/>
+  <testcase name="testDeleteWhere" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testCorrelatedSubQueryInJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.023"/>
+  <testcase name="testNestedAggregates" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testJoinNaturalMultipleCommonColumn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testGroupingSetsCartesianProduct" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testLateralDecorrelate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.028"/>
+  <testcase name="testHavingAggrFunctionIn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.026"/>
+  <testcase name="testStructTypeWithSelectFieldNameDotStar" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testWindowAverageWithGroupBy" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testExistsCorrelatedDecorrelateRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testWithUnionOrder" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testStructTypeWithSelectStar" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testStreamGroupBy" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testGroupingSetsCartesianProduct2" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testCorrelationNotExistsAndFilter" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testMultisetOfColumns" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.026"/>
+  <testcase name="testJoinOnExpression" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.008"/>
+  <testcase name="testWhereInCorrelated" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testOverAvg" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testOrderByAliasOverrides" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testJoinNatural" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.024"/>
+  <testcase name="testCollectionTableWithCursorParam" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testDynamicStarInTableJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testOrderByOrdinalDesc" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.031"/>
+  <testcase name="testCorrelationExistsAndFilter" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testUpdateWhere" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testOverCountStar" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testFetch" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testGroup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testLarge" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.593"/>
+  <testcase name="testMerge" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0">
+    <skipped message="CALCITE-985"/>
+  </testcase>
+  <testcase name="testValuesUsing" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testOrder" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testUnion" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testOrderByAliasDoesNotOverride" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0"/>
+  <testcase name="testCase" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testCube" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testWith" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testCorrelatedSubQueryInAggregate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testGrpByColFromStarInSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testExistsCorrelated" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testNotInUncorrelatedSubQueryInSelectRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testOverMultiple" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testIntervalLiteralYearToMonth" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.01"/>
+  <testcase name="testCorrelationJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testNotInUncorrelatedSubQueryRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.01"/>
+  <testcase name="testJoinUsingCompound" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testStreamWindowedAggregation" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testExistsCorrelatedLimit" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testTableExtend" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testIntervalLiteralHourToMinute" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.01"/>
+  <testcase name="testExplicitTable" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testNestedCorrelationsDecorrelatedRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testUncorrelatedScalarSubQueryInGroupOrderRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testJoinOnIn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testUncorrelatedScalarSubQueryInOrderRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testGroupingFunction" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testJoinUnnestRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSelectStarFromDynamicTable" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testGroupingSetsWith" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testConditionOffByOneReversed" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testStructType" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testGroupByWithDuplicates" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testSampleQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testLateral" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testAggFilter" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testGroupBug281" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testElementInValues" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.01"/>
+  <testcase name="testSubQueryAggregateFunctionFollowedBySimpleOperation" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testUnnestSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testNotInUncorrelatedSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testOrderByOrdinalInExpr" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testOrderDistinct" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSampleSystemQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testDynamicStarInJoinAndSubQ" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+  <testcase name="testNotInUncorrelatedSubQueryInSelect" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testUnionInFrom" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testCollectionTableWithLateral2" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testWindowAggWithGroupByAndJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testOrderByNegativeOrdinal" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testUnionSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.024"/>
+  <testcase name="testCharLength" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testStarJoinStaticDynTable" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testInValueListShort" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testSelectDistinct" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testOrderGroup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testOrderUnion" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.027"/>
+  <testcase name="testOrderOffsetFetch" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testAggregateNoGroup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.026"/>
+  <testcase name="testSortWithTrim" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testSelStarOrderBy" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testRollupSimple" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testWithInsideWhereExists" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testJoinUsing" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testAggCaseSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testRollupTuples" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testUnionValues" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testOverOrderFollowingWindow" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.028"/>
+  <testcase name="testInsertView" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testCorrelationScalarAggAndFilterRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testCollectionTableWithLateral" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testInUncorrelatedSubQueryRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testWithInsideWhereExistsDecorrelate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testCountNoGroup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testOrderUnionOrdinal" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testUnionAll" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testHavingInSubQueryWithAggrFunction" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testUnnestArray" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testOrderByOver" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testInToSemiJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.024"/>
+  <testcase name="testOrderUnionExprs" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testGroupAlias" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testGroupEmpty" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testAggregateAndScalarSubQueryInHaving" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testOffsetFetch" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testConditionOffByOne" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testJoinNaturalNoCommonColumn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testGroupByCaseIn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testExistsCorrelatedLimitDecorrelateRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testJoinOnExists" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testStructType2" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testStructType3" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testStructType4" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testSelectFromDynamicTable" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testWithInsideWhereExistsDecorrelateRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testExistsCorrelatedDecorrelate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testInValueListLong" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testWindowAggWithGroupByAndHaving" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testJoinUnnest" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testAggregateAndScalarSubQueryInSelect" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testCollectionTable" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testNotInUncorrelatedSubQueryInSelectNotNull" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testGroupBug281b" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testUnnestWithOrdinality" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testCorrelationScalarAggAndFilter" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testGroupingSets" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testSubQueryValues" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testUnnestSelectRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testJoinWithUnion" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testAggScalarSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testInUncorrelatedSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testWindowAggWithGroupBy" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSampleSystem" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testAggNoDuplicateColumnNames" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testJoinUsingThreeWay" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testNotInUncorrelatedSubQueryInSelectNotNullRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testDynStarInExistSubQ" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.033"/>
+  <testcase name="testAggDistinct" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.008"/>
+  <testcase name="testOverAvg2" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.008"/>
+  <testcase name="testOrderByIdenticalExpr" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testWithInsideScalarSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testDelete" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testInterval" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0"/>
+  <testcase name="testExplainAsXml" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.001"/>
+  <testcase name="testGroupingSetsProduct" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testExists" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testSelectDistinctDup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testGroupByExpression" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testMultiAnd" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testMultiset" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testInUncorrelatedSubQueryInSelectRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testCorrelationExistsAndFilterRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testHaving" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testGroupJustOneAgg" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.02"/>
+  <testcase name="testIsNotDistinctFrom" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testInsert" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testFakeStar" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testOrderByAliasInExpr" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testJoinOn" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testCorrelationJoinRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testOverOrderWindow" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.025"/>
+  <testcase name="testOrderDescNullsLast" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testWithAlias" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testMultisetSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testExistsCorrelatedLimitDecorrelate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testWithOrder" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testSingletonGroupingSet" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.019"/>
+  <testcase name="testWithUnion" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.018"/>
+  <testcase name="testSelectWithoutFrom" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.021"/>
+  <testcase name="testOffset" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.017"/>
+  <testcase name="testAliasList2" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.022"/>
+  <testcase name="testWithInsideScalarSubQueryRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.009"/>
+  <testcase name="testRollup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSample" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testStream" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testReferDynamicStarInSelectWhereGB" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testNotLike" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testUnnestSelect" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.016"/>
+  <testcase name="testInUncorrelatedSubQueryInSelect" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.015"/>
+  <testcase name="testUnnest" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testUpdate" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testInUncorrelatedSubQueryInHavingRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testGroupByCaseSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testUpdateSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testSelectDistinctGroup" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testCompositeInUncorrelatedSubQueryRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSelectView" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testUncorrelatedScalarSubQueryInAggregateRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testGroupExpressionsInsideAndOut" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testDuplicateColumnsInSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.012"/>
+  <testcase name="testMultisetOfColumnsRex" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testJoinOnInSubQuery" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.013"/>
+  <testcase name="testSubQueryLimitOne" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.014"/>
+  <testcase name="testWindowAggInSubQueryJoin" classname="org.apache.calcite.test.SqlToRelConverterExtendedTest" time="0.011"/>
+</testsuite>

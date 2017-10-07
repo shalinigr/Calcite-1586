@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.calcite.test.SqlToRelConverterTest
+-------------------------------------------------------------------------------
+Tests run: 223, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 8.874 sec - in org.apache.calcite.test.SqlToRelConverterTest
