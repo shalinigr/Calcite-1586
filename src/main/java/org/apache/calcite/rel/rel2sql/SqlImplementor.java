@@ -227,16 +227,17 @@ public abstract class SqlImplementor {
   }
 
   public Result setOpToSql(SqlSetOperator operator, RelNode rel) {
-    List<SqlNode> list = Expressions.list();
-    for (Ord<RelNode> input : Ord.zip(rel.getInputs())) {
-      final Result result = visitChild(input.i, input.e);
-      list.add(result.asSelect());
-    }
-    final SqlCall node = operator.createCall(new SqlNodeList(list, POS));
-    final List<Clause> clauses =
-        Expressions.list(Clause.SET_OP);
-    return result(node, clauses, rel, null);
-  }
+	    Result result = null;
+	    SqlNode node = null;
+	    List<Ord<RelNode>> inputs = Ord.zip(rel.getInputs());
+	    for(int i=0; i < inputs.size(); i++) {
+	    	result = visitChild(inputs.get(i).i, inputs.get(i).e);	    	
+	    	    node = operator.createCall(POS, node, result.asSelect());
+	    }
+	    final List<Clause> clauses =
+	        Expressions.list(Clause.SET_OP);
+	    return result(node, clauses, rel, null);
+	}
 
   /**
    * Converts a {@link RexNode} condition into a {@link SqlNode}.
