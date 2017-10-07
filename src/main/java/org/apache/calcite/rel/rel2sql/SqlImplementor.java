@@ -231,8 +231,12 @@ public abstract class SqlImplementor {
 	    SqlNode node = null;
 	    List<Ord<RelNode>> inputs = Ord.zip(rel.getInputs());
 	    for(int i=0; i < inputs.size(); i++) {
-	    	result = visitChild(inputs.get(i).i, inputs.get(i).e);	    	
-	    	    node = operator.createCall(POS, node, result.asSelect());
+	    	result = visitChild(inputs.get(i).i, inputs.get(i).e);
+	    	 if (node == null) {
+	    	       node = result.asSelect();
+	    	     } else {
+	    	       node = operator.createCall(POS, node, result.asSelect());
+	    	     }
 	    }
 	    final List<Clause> clauses =
 	        Expressions.list(Clause.SET_OP);
